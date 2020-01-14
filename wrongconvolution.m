@@ -1,0 +1,15 @@
+clc;
+close all;
+clear all;
+x=[0 1 3 4 5];
+n1=[-1:3];
+y=[1 2 3 4 5];
+n2=[0:4];
+q=convn(x,y);
+z=(min(n1)+min(n2)):(max(n1)+max(n2));
+subplot(311);
+stem(n1,x);
+subplot(312);
+stem(n2,y);
+subplot(313);
+stem(z,q);
